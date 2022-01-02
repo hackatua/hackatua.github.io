@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhackatua_github_io=self.webpackChunkhackatua_github_io||[]).push([[963],{4785:function(e,t,u){u.r(t);var a=u(7294),n=u(8729);t.default=function(){return a.createElement(n.A,null,a.createElement("div",null,"Wiki Page!"))}}}]);
-//# sourceMappingURL=component---src-pages-wiki-tsx-1ad3027df0c0ec916964.js.map

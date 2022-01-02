@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-wiki-tsx",
     "path": "/wiki/",
-    "result": {"pageContext":{}},
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"fields":{"slug":"/wiki/nmap/"},"id":"01c05646-b54c-5630-9d6d-eeff52e9a712","frontmatter":{"title":"Nmap"}},{"fields":{"slug":"/wiki/sample/"},"id":"43cb5c43-bd22-57d4-9475-a899bf7cd2c2","frontmatter":{"title":"Sample"}}]}},"pageContext":{}},
     "staticQueryHashes": []}
