@@ -12,7 +12,7 @@ export const Header: React.FC = ({ children }) => (
     <StyledHeaderContent>
       <StyledHeaderTitle to="/">{children}</StyledHeaderTitle>
       <StyledHeaderNavbar>
-        <StyledHeaderNavLink to="wiki">Wiki</StyledHeaderNavLink>
+        <StyledHeaderNavLink to="/wiki">Wiki</StyledHeaderNavLink>
       </StyledHeaderNavbar>
     </StyledHeaderContent>
   </StyledHeader>
