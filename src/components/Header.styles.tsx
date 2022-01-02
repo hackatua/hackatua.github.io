@@ -10,6 +10,9 @@ export const StyledHeader = styled.header`
 `
 
 export const StyledHeaderContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
@@ -25,4 +28,10 @@ export const StyledHeaderTitle = styled(Link)`
     position: absolute;
     left: -40px;
   }
+`
+
+export const StyledHeaderNavbar = styled.nav``
+
+export const StyledHeaderNavLink = styled(Link)`
+  color: #b5e853;
 `
