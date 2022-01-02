@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhackatua_github_io=self.webpackChunkhackatua_github_io||[]).push([[678],{704:function(u,t,e){e.r(t),e.d(t,{default:function(){return a}});var n=e(294);function a(){return n.createElement("div",null,"Hello world!")}}}]);
+//# sourceMappingURL=component---src-pages-index-js-6ed53fb35cb62b61ac04.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-js-6ed53fb35cb62b61ac04.js","mappings":"sLAEe,SAASA,IACtB,OAAO","sources":["webpack://hackatua.github.io/./src/pages/index.js"],"sourcesContent":["import React from \"react\"\n\nexport default function Home() {\n  return <div>Hello world!</div>\n}\n"],"names":["Home"],"sourceRoot":""}
