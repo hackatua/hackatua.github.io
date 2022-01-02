@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
         margin: 0;
         padding: 0;
-        background: url(${background});
+        background: #151515 url(${background}) 0 0;
         color: #eaeaea;
         font-family: Hack;
     }
