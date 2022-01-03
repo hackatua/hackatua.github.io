@@ -28,7 +28,8 @@ A _paragraph_ with **bold** and *italic*. __An__ some `code`.
 
 > A quote
 
-```typescript
+```typescript{1-2}
 // Code block
 const aNumber: number = 5;
+const otherNumber: number = 10;
 ```

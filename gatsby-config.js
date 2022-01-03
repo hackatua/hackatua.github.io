@@ -14,6 +14,21 @@ module.exports = {
         name: "wiki",
       },
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: "none",
+              theme: "dracula",
+              editable: false,
+              lineNumbers: true
+            },
+          },
+        ],
+      },
+    },
   ],
 }
