@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhackatua_github_io=self.webpackChunkhackatua_github_io||[]).push([[963],{4785:function(e,t,a){a.r(t);var n=a(7294),l=a(5444),u=a(6311);t.default=function(e){var t=e.data;return n.createElement(u.A,null,n.createElement("h2",null,"Wiki Page!"),n.createElement("h3",null,"Content"),n.createElement("ul",null,t.allMarkdownRemark.nodes.map((function(e){return n.createElement("li",{key:e.id},n.createElement(l.rU,{to:e.fields.slug},e.frontmatter.title))}))))}}}]);
+//# sourceMappingURL=component---src-pages-wiki-tsx-9609c190b8f3f1c03cae.js.map

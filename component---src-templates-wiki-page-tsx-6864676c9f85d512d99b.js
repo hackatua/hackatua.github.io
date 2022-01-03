@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhackatua_github_io=self.webpackChunkhackatua_github_io||[]).push([[126],{1464:function(e,t,a){a.r(t);var n=a(7294),r=a(8729);t.default=function(e){var t=e.data.markdownRemark,a=t.frontmatter.title,u=t.html;return n.createElement(r.A,null,a&&n.createElement("h1",null,a),n.createElement("div",{dangerouslySetInnerHTML:{__html:u}}))}}}]);
-//# sourceMappingURL=component---src-templates-wiki-page-tsx-6864676c9f85d512d99b.js.map
