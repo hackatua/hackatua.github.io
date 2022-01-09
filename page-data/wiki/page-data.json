@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-wiki-tsx",
     "path": "/wiki/",
-    "result": {"data":{"allMarkdownRemark":{"nodes":[{"fields":{"slug":"/wiki/nmap/"},"id":"01c05646-b54c-5630-9d6d-eeff52e9a712","frontmatter":{"title":"Nmap"}},{"fields":{"slug":"/wiki/sample/"},"id":"43cb5c43-bd22-57d4-9475-a899bf7cd2c2","frontmatter":{"title":"Sample"}}]}},"pageContext":{}},
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"fields":{"slug":"/wiki/nmap/"},"id":"01c05646-b54c-5630-9d6d-eeff52e9a712","frontmatter":{"title":"Nmap"}},{"fields":{"slug":"/wiki/sample/"},"id":"43cb5c43-bd22-57d4-9475-a899bf7cd2c2","frontmatter":{"title":"Sample"}},{"fields":{"slug":"/wiki/linux/01. the basics/"},"id":"88f3245a-d9a6-55aa-9f68-1d7375dd8a97","frontmatter":{"title":"The Basics"}}]}},"pageContext":{}},
     "staticQueryHashes": []}
