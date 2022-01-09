@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../components/Layout"
 import { WikiMarkdown } from "../components/WikiMarkdown"
+import { WikiTitle } from "../components/WikiTitle.styled"
 
 interface Props {
   data: {
@@ -24,7 +25,7 @@ const WikiPage: React.VFC<Props> = ({ data }) => {
 
   return (
     <Layout>
-      {title && <h1>{title}</h1>}
+      {title && <WikiTitle>{title}</WikiTitle>}
       <WikiMarkdown content={html} />
     </Layout>
   )
