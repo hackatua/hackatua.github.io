@@ -17,4 +17,13 @@ export const StyledWikiMarkdown = styled.div`
     --deckgo-highlight-code-font-family: Hack;
     --deckgo-highlight-code-font-size: 0.8em;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #b5e853;
+  }
 `
