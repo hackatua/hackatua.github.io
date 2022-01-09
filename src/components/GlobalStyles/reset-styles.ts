@@ -89,6 +89,7 @@ export const resetStyles = css`
     font: inherit;
     vertical-align: baseline;
   }
+
   /* HTML5 display-role reset for older browsers */
   article,
   aside,
@@ -103,17 +104,21 @@ export const resetStyles = css`
   section {
     display: block;
   }
+
   body {
     line-height: 1;
   }
+
   ol,
   ul {
     list-style: none;
   }
+
   blockquote,
   q {
     quotes: none;
   }
+
   blockquote:before,
   blockquote:after,
   q:before,
@@ -121,8 +126,13 @@ export const resetStyles = css`
     content: "";
     content: none;
   }
+
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+
+  a {
+      text-decoration: none;
   }
 `
