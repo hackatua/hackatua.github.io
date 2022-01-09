@@ -10,6 +10,14 @@ export const StyledWikiMarkdown = styled.div`
     font-size: 14px;
   }
 
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
   h1,
   h2,
   h3,
