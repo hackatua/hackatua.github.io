@@ -1,8 +1,5 @@
 import React from "react"
 import { StyledWikiMarkdown } from "./WikiMarkdown.styles"
-import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
-deckDeckGoHighlightElement();
-
 interface Props {
   content: string
 }

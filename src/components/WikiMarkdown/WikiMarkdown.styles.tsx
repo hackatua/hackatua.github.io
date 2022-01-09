@@ -4,21 +4,10 @@ export const StyledWikiMarkdown = styled.div`
   width: 100%;
   -webkit-font-smoothing: antialiased;
 
-  & code {
-    background: rgba(0, 0, 0, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 0px 4px;
-    color: #b5e853;
-    border-radius: 5px;
+  code[class*="language-"], pre[class*="language-"] {
     font-family: Hack;
-    margin: 0 -2px;
-  }
-  & deckgo-highlight-code {
-    --deckgo-highlight-code-background: rgba(0, 0, 0, 0.9);
-    --deckgo-highlight-code-padding: 10px;
-    --deckgo-highlight-code-border-radius: 10px;
-    --deckgo-highlight-code-font-family: Hack;
-    --deckgo-highlight-code-font-size: 0.8em;
+    line-height: 1.3;
+    font-size: 14px;
   }
 
   h1,
@@ -73,18 +62,6 @@ export const StyledWikiMarkdown = styled.div`
     color: #aaa;
     padding-left: 10px;
     border-left: 1px dotted #666;
-  }
-
-  pre {
-    background: rgba(0, 0, 0, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 10px;
-    font-size: 16px;
-    color: #b5e853;
-    border-radius: 2px;
-    word-wrap: normal;
-    overflow: auto;
-    overflow-y: hidden;
   }
 
   table {
