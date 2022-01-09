@@ -1,15 +1,15 @@
-<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 4.4.0"/><link as="script" rel="preload" href="/webpack-runtime-80efe120e51db99b86d9.js"/><link as="script" rel="preload" href="/framework-3fc5895640b8716368a8.js"/><link as="script" rel="preload" href="/app-b23239330636dfc233da.js"/><link as="script" rel="preload" href="/commons-d185871a47810a423c81.js"/><link as="script" rel="preload" href="/component---src-templates-wiki-page-tsx-392fd301ddc3fb65455d.js"/><link as="fetch" rel="preload" href="/page-data/wiki/nmap/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><header class="sc-bdvvtL hBzEkC"><div class="sc-gsDKAQ jyA-dYq"><a class="sc-dkPtRN czCjnC" href="/">Hackatua</a><nav class="sc-hKwDye hWshXD"><a class="sc-eCImPb falHNY" href="/wiki">Wiki</a></nav></div></header><div class="sc-jRQBWg eKVfyA"><h1 class="sc-iCfMLu blxKWB">Nmap</h1><div class="sc-gKclnd kcOqhA"><h1>Introducción</h1>
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.e53586a225ffdde20c86.css" data-identity="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 4.4.0"/><link as="script" rel="preload" href="/webpack-runtime-f4aebbf8ddf66f3e42ee.js"/><link as="script" rel="preload" href="/framework-3fc5895640b8716368a8.js"/><link as="script" rel="preload" href="/app-22474a9a021873b8ad92.js"/><link as="script" rel="preload" href="/commons-f756b8ad19f3a40175c8.js"/><link as="script" rel="preload" href="/component---src-templates-wiki-page-tsx-0d63bbe2a5ee9c9cab8a.js"/><link as="fetch" rel="preload" href="/page-data/wiki/nmap/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><header class="sc-bdvvtL hBzEkC"><div class="sc-gsDKAQ jyA-dYq"><a class="sc-dkPtRN czCjnC" href="/">Hackatua</a><nav class="sc-hKwDye hWshXD"><a class="sc-eCImPb falHNY" href="/wiki">Wiki</a></nav></div></header><div class="sc-jRQBWg eKVfyA"><h1 class="sc-iCfMLu blxKWB">Nmap</h1><div class="sc-gKclnd goeLwh"><h1>Introducción</h1>
 <p>Nmap (Network Mapper) es una herramienta libre y opensource especializada en la exploración de redes y auditorías de seguridad.</p>
 <p>Utiliza paquetes IP en bruto para determinar cuáles son los host actualmente disponibles en la red, qué servicios y versones de los mismos ofrecen estos hosts, qué sistema operativo está ejecutando, ...etc.</p>
 <h1>Uso</h1>
-<p><code>nmap [params] {target}</code></p>
+<p><code class="language-text">nmap [params] {target}</code></p>
 <h2>Parámetros</h2>
-<p><code>--open</code>: muestra únicamente los puertos abiertos</p>
-<p><code>--min-rate &#x3C;value></code>:</p>
-<p><code>-oG &#x3C;filename></code>: exporta en formato grepeable</p>
-<p><code>-oN &#x3C;filename></code>: exporta en formato nmap</p>
+<p><code class="language-text">--open</code>: muestra únicamente los puertos abiertos</p>
+<p><code class="language-text">--min-rate &lt;value></code>:</p>
+<p><code class="language-text">-oG &lt;filename></code>: exporta en formato grepeable</p>
+<p><code class="language-text">-oN &lt;filename></code>: exporta en formato nmap</p>
 <h3>Host Discovery</h3>
-<p><code>-sn</code>/<code>-sP</code>: escaneo usando Ping (ICMP). Desabilita el escaneo de puertos.</p>
+<p><code class="language-text">-sn</code>/<code class="language-text">-sP</code>: escaneo usando Ping (ICMP). Desabilita el escaneo de puertos.</p>
 <aside>
 💡 `-sP` es la nomenclatura antigual por el ICMP scan.
 </aside>
@@ -18,79 +18,79 @@
 Se puede usar el parámetro `--send-ip` para forzar el escenario de una red no local.
 </aside>
 <p>Usa 4 técnicas diferentes para realizar este descubrimiento, 2 usando ICMP, y 2 usando TCP.</p>
-<p><code>-Pn</code>: Trata todos los hosts del target como online. No realiza host discovery.</p>
-<p><code>-n</code>: Deshabilita la resolución DNS</p>
-<p><code>--traceroute</code>: Muestra el path hasta el host</p>
+<p><code class="language-text">-Pn</code>: Trata todos los hosts del target como online. No realiza host discovery.</p>
+<p><code class="language-text">-n</code>: Deshabilita la resolución DNS</p>
+<p><code class="language-text">--traceroute</code>: Muestra el path hasta el host</p>
 <h3>Scan techniques</h3>
 <p>Por defecto nmap intenta usar la técnica más adecuada para el entorno del escaneo.</p>
-<p><code>-sS</code>: TCP SYN Stealth scan (half open scan)</p>
-<p><code>-sT</code>: TCP connect scan (full open scan)</p>
+<p><code class="language-text">-sS</code>: TCP SYN Stealth scan (half open scan)</p>
+<p><code class="language-text">-sT</code>: TCP connect scan (full open scan)</p>
 <h3>Port specification</h3>
 <p>Si no se especifica el rango de puertos a escanear, nmap escane los 1000 puertos más usados.</p>
-<p><code>-p &#x3C;port ranges></code>: esanea únicamente los puertos especificados. Ej:</p>
+<p><code class="language-text">-p &lt;port ranges></code>: esanea únicamente los puertos especificados. Ej:</p>
 <ul>
-<li><code>-p-</code>: escanea todos los puertos</li>
-<li><code>-p22</code>: escanea únicamente el puerto 22</li>
-<li><code>-p1-65535</code>: escanea del puerto 1 al 65535</li>
-<li><code>-p U:53,111,137,T:21-25,80,139,8080,S:9</code>: escanea los puertos especificados</li>
+<li><code class="language-text">-p-</code>: escanea todos los puertos</li>
+<li><code class="language-text">-p22</code>: escanea únicamente el puerto 22</li>
+<li><code class="language-text">-p1-65535</code>: escanea del puerto 1 al 65535</li>
+<li><code class="language-text">-p U:53,111,137,T:21-25,80,139,8080,S:9</code>: escanea los puertos especificados</li>
 </ul>
 <h3>Service/version detection</h3>
-<p><code>-sV</code>: prueba los puertos abiertos para detectar el servicio y la versión de los mismos</p>
+<p><code class="language-text">-sV</code>: prueba los puertos abiertos para detectar el servicio y la versión de los mismos</p>
 <h3>Scripts</h3>
-<p><code>-sC</code>: aplica los scripts por defecto (<em>default scripts</em>).</p>
-<p><code>--script=&#x3C;Lua scripts></code>: aplica los scripts especificados. Admite una lista de directorios, de ficheros de scripts o de categorías de scripts. Ej:</p>
+<p><code class="language-text">-sC</code>: aplica los scripts por defecto (<em>default scripts</em>).</p>
+<p><code class="language-text">--script=&lt;Lua scripts></code>: aplica los scripts especificados. Admite una lista de directorios, de ficheros de scripts o de categorías de scripts. Ej:</p>
 <ul>
-<li><code>--script=banner</code>: ejecuta el script banner</li>
-<li><code>--script=ip-geolocation-*</code>: ejecuta todos los scripts que empiezan por “ip-geolocation-”</li>
+<li><code class="language-text">--script=banner</code>: ejecuta el script banner</li>
+<li><code class="language-text">--script=ip-geolocation-*</code>: ejecuta todos los scripts que empiezan por “ip-geolocation-”</li>
 </ul>
 <h3>OS detection</h3>
-<p><code>-O</code>: habilita la detección de sistema operativo</p>
+<p><code class="language-text">-O</code>: habilita la detección de sistema operativo</p>
 <h3>Timing and performance</h3>
-<p><code>-T&#x3C;0-5></code>: aplica diferentes plantillas de tiempo (0 más lento a 5 más rápido)</p>
+<p><code class="language-text">-T&lt;0-5></code>: aplica diferentes plantillas de tiempo (0 más lento a 5 más rápido)</p>
 <h3>Evasión y spoofing de Firewalls/IDS</h3>
-<p><code>-f</code>: fragmetación de paquetes</p>
-<p><code>-D &#x3C;decoy1, decoy2, ...></code>: esconde tu información a través de un señuelo</p>
-<p><code>-g</code>: puerto origen del escaneo</p>
-<p><code>--badsum</code>: envía paquetes TCP/UDP/SCTP con un checksum incorrecto</p>
+<p><code class="language-text">-f</code>: fragmetación de paquetes</p>
+<p><code class="language-text">-D &lt;decoy1, decoy2, ...></code>: esconde tu información a través de un señuelo</p>
+<p><code class="language-text">-g</code>: puerto origen del escaneo</p>
+<p><code class="language-text">--badsum</code>: envía paquetes TCP/UDP/SCTP con un checksum incorrecto</p>
 <h3>Output</h3>
-<p><code>-v</code>: incrementa la verbosidad de la salida. Se pueden agregar más “v” para incrementar el nivel de verbosidad. Ej:</p>
+<p><code class="language-text">-v</code>: incrementa la verbosidad de la salida. Se pueden agregar más “v” para incrementar el nivel de verbosidad. Ej:</p>
 <ul>
-<li><code>-vv</code></li>
-<li><code>-vvv</code></li>
+<li><code class="language-text">-vv</code></li>
+<li><code class="language-text">-vvv</code></li>
 </ul>
-<p><code>--packet-trace</code>: mustra todos los paquetes envíados y recibidos en el escaneo</p>
+<p><code class="language-text">--packet-trace</code>: mustra todos los paquetes envíados y recibidos en el escaneo</p>
 <h3>Misc</h3>
-<p><code>--send-ip</code>: fuerza el uso de paquetes IP para poder simular un entorno real en una red local.</p>
-<p><code>-A</code>: aplica detección de OS (<code>-O</code>), versiones y servicios (<code>-sV</code>), script scanning (<code>-sC</code>) y traceroute(<code>--traceroute</code>)</p>
+<p><code class="language-text">--send-ip</code>: fuerza el uso de paquetes IP para poder simular un entorno real en una red local.</p>
+<p><code class="language-text">-A</code>: aplica detección de OS (<code class="language-text">-O</code>), versiones y servicios (<code class="language-text">-sV</code>), script scanning (<code class="language-text">-sC</code>) y traceroute(<code class="language-text">--traceroute</code>)</p>
 <h2>Script engine</h2>
-<p>Se encuentran en <code>/usr/share/nmap/scripts</code>.</p>
-<p>Para listar los scripts con un texto concreto podemos usar <code>ls -l /usr/share/nmap/scripts/*{termino de búsqueda}*</code>.</p>
+<p>Se encuentran en <code class="language-text">/usr/share/nmap/scripts</code>.</p>
+<p>Para listar los scripts con un texto concreto podemos usar <code class="language-text">ls -l /usr/share/nmap/scripts/*{termino de búsqueda}*</code>.</p>
 <h3>Scripts</h3>
-<p><code>--script=banner</code>: similar a hacer usar netcat contra un puerto</p>
+<p><code class="language-text">--script=banner</code>: similar a hacer usar netcat contra un puerto</p>
 <h3>Categories</h3>
-<p><code>--script=vuln</code>: ejecuta los scripts para la detección de vulnerabilidades</p>
+<p><code class="language-text">--script=vuln</code>: ejecuta los scripts para la detección de vulnerabilidades</p>
 <h2>Ejemplos</h2>
 <h3>Host discovery mediante Ping (ICMP)</h3>
-<p><code>nmap -sn -v 192.168.0.70</code></p>
+<p><code class="language-text">nmap -sn -v 192.168.0.70</code></p>
 <h3>Host discovery mediante ICMP forzando uso de IP</h3>
-<p><code>nmap -sn --send-ip -v 192.168.0.70</code></p>
+<p><code class="language-text">nmap -sn --send-ip -v 192.168.0.70</code></p>
 <h3>Host discovery mediante ICMP forzando uso de IP mostrando paquetes</h3>
-<p><code>nmap -sn --send-ip --packet-trace -v 192.168.0.70</code></p>
+<p><code class="language-text">nmap -sn --send-ip --packet-trace -v 192.168.0.70</code></p>
 <h3>Escaneo (SYN Stealth) de los 1000 puertos más comunes ignorando el host discovery y sin resolución DNS</h3>
-<p><code>nmap -n -Pn -v 192.168.0.70</code></p>
+<p><code class="language-text">nmap -n -Pn -v 192.168.0.70</code></p>
 <h3>Escaneo (TCP connect) a puertos específicos a toda la red</h3>
-<p><code>nmap -sT -p 80,443 192.168.0.0/24</code></p>
+<p><code class="language-text">nmap -sT -p 80,443 192.168.0.0/24</code></p>
 <h3>Escaneo de versiones de servicios en puertos concretos ignorando host discovery y sin resolución DNS</h3>
-<p><code>nmap -n -Pn -v -sV -p22,80,443 192.168.0.70</code></p>
+<p><code class="language-text">nmap -n -Pn -v -sV -p22,80,443 192.168.0.70</code></p>
 <h3>Escaneo de versiones de servicios y sistema operativo en puertos concretos ignorando host discovery y sin resolución DNS</h3>
-<p><code>nmap -n -Pn -v -sV -O -p22,80,443 192.168.0.70</code></p>
+<p><code class="language-text">nmap -n -Pn -v -sV -O -p22,80,443 192.168.0.70</code></p>
 <h3>Escaneo (SYN Stealth) de los 1000 puertos más comunes ignorando el host discovery y sin resolución DNS, y con fragmentación de paquetes</h3>
-<p><code>nmap -n -Pn -v -f 192.168.0.70</code></p>
+<p><code class="language-text">nmap -n -Pn -v -f 192.168.0.70</code></p>
 <h3>Escaneo (SYN Stealth) de los 1000 puertos más comunes ignorando el host discovery y sin resolución DNS, y con señuelo</h3>
-<p><code>nmap -n -Pn -v -D 192.168.0.50 192.168.0.70</code></p>
+<p><code class="language-text">nmap -n -Pn -v -D 192.168.0.50 192.168.0.70</code></p>
 <h3>Escaneo (SYN Stealth) de los 1000 puertos más comunes ignorando el host discovery y sin resolución DNS, y con puerto origen definido</h3>
-<p><code>nmap -n -Pn -v -g 80 192.168.0.70</code></p>
+<p><code class="language-text">nmap -n -Pn -v -g 80 192.168.0.70</code></p>
 <h3>Escaneo (SYN Stealth) de los 1000 puertos más comunes ignorando el host discovery y sin resolución DNS, y con checksum erróneo</h3>
-<p><code>nmap -n -Pn -v --badsum 192.168.0.70</code></p>
+<p><code class="language-text">nmap -n -Pn -v --badsum 192.168.0.70</code></p>
 <h3>Escaneo (SYN Stealth) de puertos específicos ignorando el host discovery y sin resolución DNS, aplicando los scripts por defecto</h3>
-<p><code>nmap -n -Pn -v -sV --script=default -p22,80,443 192.168.0.70</code></p></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/wiki/nmap/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-33ce00ce9a9fa4784e76.js"],"app":["/app-b23239330636dfc233da.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-33c690944b53eb6aafb2.js"],"component---src-pages-wiki-tsx":["/component---src-pages-wiki-tsx-a145e3c692ea0c2907b0.js"],"component---src-templates-wiki-page-tsx":["/component---src-templates-wiki-page-tsx-392fd301ddc3fb65455d.js"]};/*]]>*/</script><script src="/polyfill-33ce00ce9a9fa4784e76.js" nomodule=""></script><script src="/component---src-templates-wiki-page-tsx-392fd301ddc3fb65455d.js" async=""></script><script src="/commons-d185871a47810a423c81.js" async=""></script><script src="/app-b23239330636dfc233da.js" async=""></script><script src="/framework-3fc5895640b8716368a8.js" async=""></script><script src="/webpack-runtime-80efe120e51db99b86d9.js" async=""></script></body></html>
+<p><code class="language-text">nmap -n -Pn -v -sV --script=default -p22,80,443 192.168.0.70</code></p></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/wiki/nmap/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-33ce00ce9a9fa4784e76.js"],"app":["/app-22474a9a021873b8ad92.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-33c690944b53eb6aafb2.js"],"component---src-pages-wiki-tsx":["/component---src-pages-wiki-tsx-a145e3c692ea0c2907b0.js"],"component---src-templates-wiki-page-tsx":["/component---src-templates-wiki-page-tsx-0d63bbe2a5ee9c9cab8a.js"]};/*]]>*/</script><script src="/polyfill-33ce00ce9a9fa4784e76.js" nomodule=""></script><script src="/component---src-templates-wiki-page-tsx-0d63bbe2a5ee9c9cab8a.js" async=""></script><script src="/commons-f756b8ad19f3a40175c8.js" async=""></script><script src="/app-22474a9a021873b8ad92.js" async=""></script><script src="/framework-3fc5895640b8716368a8.js" async=""></script><script src="/webpack-runtime-f4aebbf8ddf66f3e42ee.js" async=""></script></body></html>
