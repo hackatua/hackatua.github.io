@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components"
-import background from "../images/background.png"
-import hackRegularWebFontWoff from "../fonts/hack-regular-webfont.woff"
-import hackRegularWebFontWoff2 from "../fonts/hack-regular-webfont.woff2"
+import background from "../../images/background.png"
+import hackRegularWebFontWoff from "../../fonts/hack-regular-webfont.woff"
+import hackRegularWebFontWoff2 from "../../fonts/hack-regular-webfont.woff2"
 
 export const GlobalStyles = createGlobalStyle`
     @font-face {
