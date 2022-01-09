@@ -70,9 +70,9 @@ export const StyledWikiMarkdown = styled.div`
   }
 
   blockquote {
-    color: $blockquote-color;
+    color: #aaa;
     padding-left: 10px;
-    border-left: 1px dotted $blockquote-border;
+    border-left: 1px dotted #666;
   }
 
   pre {
