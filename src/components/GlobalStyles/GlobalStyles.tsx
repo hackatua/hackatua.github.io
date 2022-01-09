@@ -14,10 +14,10 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     body {
-        margin: 0;
-        padding: 0;
         background: #151515 url(${background}) 0 0;
         color: #eaeaea;
         font-family: Hack;
+        font-size: 16px;
+        line-height: 1.5;
     }
 `
