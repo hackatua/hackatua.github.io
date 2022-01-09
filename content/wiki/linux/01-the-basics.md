@@ -1,5 +1,5 @@
 ---
-title: The Basics
+title: 1. The Basics
 ---
 
 ## Terms and concepts
