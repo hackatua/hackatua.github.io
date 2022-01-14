@@ -66,7 +66,7 @@ export const StyledWikiMarkdown = styled.div`
 
   ul {
     list-style-type: disc;
-    padding-inline-start: 30px;
+    padding-inline-start: 40px;
     margin-block-start: 1em;
     margin-block-end: 1em;
   }
@@ -79,7 +79,7 @@ export const StyledWikiMarkdown = styled.div`
 
   ol {
     list-style-type: decimal;
-    padding-inline-start: 30px;
+    padding-inline-start: 40px;
   }
 
   ol ol {
