@@ -14,7 +14,9 @@
     "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^2.0.2",
     "gatsby": "^4.4.0",
+    "gatsby-plugin-styled-components": "^5.5.0",
     "gatsby-remark-prismjs": "^6.4.0",
     "gatsby-source-filesystem": "^4.4.0",
     "gatsby-transformer-remark": "^5.4.0",
