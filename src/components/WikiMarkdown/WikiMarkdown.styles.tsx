@@ -1,10 +1,12 @@
 import styled from "styled-components"
+import bullet from "./bullet.png"
 
 export const StyledWikiMarkdown = styled.div`
   width: 100%;
   -webkit-font-smoothing: antialiased;
 
-  code[class*="language-"], pre[class*="language-"] {
+  code[class*="language-"],
+  pre[class*="language-"] {
     font-family: Hack;
     line-height: 1.3;
     font-size: 14px;
@@ -62,8 +64,32 @@ export const StyledWikiMarkdown = styled.div`
     font-weight: bold;
   }
 
+  ul {
+    list-style-type: disc;
+    padding-inline-start: 30px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+
+  ul ul {
+    padding-inline-start: 20px;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-inline-start: 30px;
+  }
+
+  ol ol {
+    padding-inline-start: 20px;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  }
+
   ul li {
-    list-style-image: url("../images/bullet.png");
+    list-style-image: url(${bullet});
   }
 
   blockquote {

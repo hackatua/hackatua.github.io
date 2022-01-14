@@ -18,7 +18,13 @@ Sample wiki page content
 
 * List 1
 * List 2
-  * List 3
+  * List 2.1
+  * List 2.2
+* List 3
+  * List 3.1
+  * List 3.2
+    * List 3.2.1
+    * List 3.2.2
 
 1. List 1
 2. List 2
