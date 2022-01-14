@@ -20,4 +20,17 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 16px;
         line-height: 1.5;
     }
+
+    body::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    body::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+       
+    body::-webkit-scrollbar-thumb {
+        background-color: #b5e853;
+        border-radius: 3px;
+    }
 `
