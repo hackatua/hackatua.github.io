@@ -12,6 +12,10 @@ export const StyledWikiMarkdown = styled.div`
     font-size: 14px;
   }
 
+  p {
+    text-indent: 30px;
+  }
+
   em {
     font-style: italic;
   }
