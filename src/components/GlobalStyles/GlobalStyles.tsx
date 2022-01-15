@@ -14,8 +14,8 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     body {
-        background: #151515 url(${background}) 0 0;
-        color: #eaeaea;
+        background: ${p => p.theme.colors.mattBlack} url(${background}) 0 0;
+        color: ${p => p.theme.colors.plaster};
         font-family: Hack;
         font-size: 16px;
         line-height: 1.5;
@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
     }
        
     body::-webkit-scrollbar-thumb {
-        background-color: #b5e853;
+        background-color: ${p => p.theme.colors.inchworm};
         border-radius: 3px;
     }
 `
