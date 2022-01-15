@@ -14,6 +14,7 @@ export const StyledWikiMarkdown = styled.div`
 
   p {
     text-indent: 30px;
+    margin: 15px 0;
   }
 
   em {
