@@ -124,4 +124,11 @@ export const StyledWikiMarkdown = styled.div`
     border-bottom: 1px dashed #b5e853;
     color: #b5e853;
   }
+
+  aside {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
 `
