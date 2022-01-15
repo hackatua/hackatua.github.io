@@ -31,13 +31,14 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  layout: "fullscreen",
 }
 
 export const decorators = [
   Story => (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Story/>
+      <Story />
     </ThemeProvider>
   ),
 ]
