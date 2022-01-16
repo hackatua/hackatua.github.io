@@ -17,6 +17,16 @@ export const StyledWikiMarkdown = styled.div`
     margin: 15px 0;
   }
 
+  a { 
+    color: ${p => p.theme.colors.inchworm};
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-shadow: 0 0 2px ${p => p.theme.colors.inchworm},
+      0 0 4px ${p => p.theme.colors.inchworm};
+  }
+
   em {
     font-style: italic;
   }
