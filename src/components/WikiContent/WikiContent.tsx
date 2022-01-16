@@ -22,7 +22,7 @@ const WikiContentItem: React.FC<WikiContentItemProps> = ({
     {nodes.length > 0 && (
       <StyledWikiContentBlock>
         {nodes.map(contentNode => (
-          <WikiContentItem contentNode={contentNode} />
+          <WikiContentItem contentNode={contentNode} key={contentNode.path} />
         ))}
       </StyledWikiContentBlock>
     )}
@@ -44,7 +44,7 @@ export const WikiContent: React.VFC<WikiContentProps> = ({ content }) => {
 
       <StyledWikiContentBlock>
         {content.map(contentNode => (
-          <WikiContentItem contentNode={contentNode} />
+          <WikiContentItem contentNode={contentNode} key={contentNode.path} />
         ))}
       </StyledWikiContentBlock>
     </StyledWikiContent>
