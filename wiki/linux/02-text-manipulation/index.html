@@ -68,13 +68,13 @@ data-styled.g12[id="WikiBreadcrumbstyled__StyledWikiBreadcrumbActive-sc-1yw5e71-
 <h3>cat</h3>
 <p>As we've seen in the first chapter, the easiest way to see a file is the <code class="language-text">cat</code> command.</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">┌──<span class="token punctuation">(</span>kali㉿kali<span class="token punctuation">)</span>-<span class="token punctuation">[</span>~<span class="token punctuation">]</span>
-└─$ <span class="token function">cat</span> file.txt             
+└─$ <span class="token function">cat</span> file.txt
 A text</code></pre></div>
 <p>The problem with this command for showing file contents is that it will stream all the file untils it comens to the end of it. This may be a problem if the file is to long.</p>
 <h3>head</h3>
 <p>The <code class="language-text">head</code> command shows the beginning of a file. By default, this command shows the first 10 lines of a file.</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">┌──<span class="token punctuation">(</span>kali㉿kali<span class="token punctuation">)</span>-<span class="token punctuation">[</span>~<span class="token punctuation">]</span>
-└─$ <span class="token function">head</span> httpd.conf 
+└─$ <span class="token function">head</span> httpd.conf
 <span class="token comment">###*********************************************************</span>
 <span class="token comment">###*  Web-Developer Server Suite                           *</span>
 <span class="token comment">###*  external link: http://sourceforge.net/projects/webdeveloper         *</span>
@@ -92,11 +92,11 @@ MaxRequestsPerChild  <span class="token number">0</span></code></pre></div>
 <span class="token comment">###*  Web-Developer Server Suite                           *</span>
 <span class="token comment">###*  external link: http://sourceforge.net/projects/webdeveloper         *</span>
 <span class="token comment">###*  devside_net@users.sourceforge.net                    *</span>
-<span class="token comment">###*  v1.95-httpd22-ssl     </span></code></pre></div>
+<span class="token comment">###*  v1.95-httpd22-ssl</span></code></pre></div>
 <h3>tail</h3>
 <p>The <code class="language-text">tail</code> command, in oposition to the <code class="language-text">head</code> command, shows the last lines of a file. As <code class="language-text">head</code> command, as default shows the last 10 lines.</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">┌──<span class="token punctuation">(</span>kali㉿kali<span class="token punctuation">)</span>-<span class="token punctuation">[</span>~<span class="token punctuation">]</span>
-└─$ <span class="token function">tail</span> httpd.conf 
+└─$ <span class="token function">tail</span> httpd.conf
      Alias /phpMyAdmin <span class="token string">"C:/www/phpMyAdmin"</span>
 <span class="token operator">&lt;</span>/IfModule<span class="token operator">></span>
 
@@ -114,4 +114,71 @@ MaxRequestsPerChild  <span class="token number">0</span></code></pre></div>
      order deny,allow
      deny from all
      allow from <span class="token number">127.0</span>.0.1
-<span class="token operator">&lt;</span>/Directory<span class="token operator">></span></code></pre></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/wiki/linux/02-text-manipulation/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-33ce00ce9a9fa4784e76.js"],"app":["/app-5c682d347bad2410967c.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-19054cdaad6bd0731831.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-09e3ca5ed8f2e71e735f.js"],"component---src-pages-wiki-tsx":["/component---src-pages-wiki-tsx-28a233a790f66ad61ecf.js"],"component---src-templates-wiki-page-tsx":["/component---src-templates-wiki-page-tsx-b0ac064103169666a210.js"]};/*]]>*/</script><script src="/polyfill-33ce00ce9a9fa4784e76.js" nomodule=""></script><script src="/component---src-templates-wiki-page-tsx-b0ac064103169666a210.js" async=""></script><script src="/app-5c682d347bad2410967c.js" async=""></script><script src="/framework-3fc5895640b8716368a8.js" async=""></script><script src="/webpack-runtime-323dd04d61ee7e2b0d4a.js" async=""></script></body></html>
+<span class="token operator">&lt;</span>/Directory<span class="token operator">></span></code></pre></div>
+<h3>nl</h3>
+<p>The <code class="language-text">nl</code> (<em>number lines</em>) command is lika <code class="language-text">cat</code> commnand, but shows the number of the lines. This is handy for reference changes and come back to the same palces within the file.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">┌──<span class="token punctuation">(</span>kali㉿kali<span class="token punctuation">)</span>-<span class="token punctuation">[</span>~<span class="token punctuation">]</span>
+└─$ <span class="token function">nl</span> httpd.conf
+     <span class="token number">1</span>  <span class="token comment">###*********************************************************</span>
+     <span class="token number">2</span>  <span class="token comment">###*  Web-Developer Server Suite                           *</span>
+     <span class="token number">3</span>  <span class="token comment">###*  external link: http://sourceforge.net/projects/webdeveloper         *</span>
+     <span class="token number">4</span>  <span class="token comment">###*  devside_net@users.sourceforge.net                    *</span>
+     <span class="token number">5</span>  <span class="token comment">###*  v1.95-httpd22-ssl                                    *</span>
+     <span class="token number">6</span>  <span class="token comment">###*********************************************************</span>
+
+
+     <span class="token number">7</span>  ThreadsPerChild <span class="token number">250</span>
+
+     <span class="token comment"># ... continues until the end of the file</span></code></pre></div>
+<h3>grep</h3>
+<p>The <code class="language-text">grep</code> command allows to filter the content of a file for display. In order to use it, you can pipe ("|") the result for using <code class="language-text">cat</code> in a file.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">┌──<span class="token punctuation">(</span>kali㉿kali<span class="token punctuation">)</span>-<span class="token punctuation">[</span>~<span class="token punctuation">]</span>
+└─$ <span class="token function">cat</span> httpd.conf <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"^LoadModule"</span>
+LoadModule alias_module modules/mod_alias.so
+LoadModule authz_host_module modules/mod_authz_host.so
+LoadModule autoindex_module modules/mod_autoindex.so
+LoadModule dir_module modules/mod_dir.so
+LoadModule log_config_module modules/mod_log_config.so
+LoadModule mime_module modules/mod_mime.so
+LoadModule rewrite_module modules/mod_rewrite.so
+LoadModule setenvif_module modules/mod_setenvif.so
+LoadModule php5_module <span class="token string">"C:/www/php5/php5apache2.dll"</span></code></pre></div>
+<p>As we can see in the code bellow, we are filtering the lines that start with "LoadModule". In this way we can show only the loaded modules.</p>
+<p>We can use the <code class="language-text">-v</code> argument to invert selection. This is handy if you want to hide the comment lines (the lines starting with "#"):</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">┌──<span class="token punctuation">(</span>kali㉿kali<span class="token punctuation">)</span>-<span class="token punctuation">[</span>~<span class="token punctuation">]</span>
+└─$ <span class="token function">cat</span> httpd.conf <span class="token operator">|</span> <span class="token function">grep</span> -v <span class="token string">"^#"</span>
+
+
+ThreadsPerChild <span class="token number">250</span>
+MaxRequestsPerChild  <span class="token number">0</span>
+
+Listen <span class="token number">80</span>
+
+ServerRoot <span class="token string">"/www/Apache22"</span>
+DocumentRoot <span class="token string">"/THDL/thdl-site"</span>
+ was /www/webroot
+
+ <span class="token comment"># ... continues until the end of the file</span></code></pre></div>
+<h3>sed</h3>
+<p>The <code class="language-text">sed</code> (<em>stream editor</em>) command allows you search for occurrendes of a word or a text pattern and then perform an actiion on it.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">┌──<span class="token punctuation">(</span>kali㉿kali<span class="token punctuation">)</span>-<span class="token punctuation">[</span>~<span class="token punctuation">]</span>
+└─$ <span class="token function">cat</span> file.txt
+some text
+
+┌──<span class="token punctuation">(</span>kali㉿kali<span class="token punctuation">)</span>-<span class="token punctuation">[</span>~<span class="token punctuation">]</span>
+└─$ <span class="token function">sed</span> s/some/Some/g file.txt
+Some text</code></pre></div>
+<p>A we can se in the code example, we have replaced the "some" word with "Some", making uppercase the first letter. In this example, we have used <code class="language-text">s/regexp/replacement/</code> command. The <code class="language-text">g</code> at the then is the <em>global regexp flag</em>, that indicates to replace all the matches in the file, not only the first one.</p>
+<p>We can use <code class="language-text">sed</code> for removing empty lines. Working with <code class="language-text">grep</code> and <code class="language-text">head</code> we show the first 10 lines with content (uncommented and non empty):</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">┌──<span class="token punctuation">(</span>kali㉿kali<span class="token punctuation">)</span>-<span class="token punctuation">[</span>~<span class="token punctuation">]</span>
+└─$ <span class="token function">cat</span> httpd.conf <span class="token operator">|</span> <span class="token function">grep</span> -v <span class="token string">"^#"</span> <span class="token operator">|</span> <span class="token function">sed</span> /^$/d <span class="token operator">|</span> <span class="token function">head</span>
+ThreadsPerChild <span class="token number">250</span>
+MaxRequestsPerChild  <span class="token number">0</span>
+Listen <span class="token number">80</span>
+ServerRoot <span class="token string">"/www/Apache22"</span>
+DocumentRoot <span class="token string">"/THDL/thdl-site"</span>
+ was /www/webroot
+ServerName localhost:80
+ServerAdmin admin@localhost
+ErrorLog logs/error.log
+LogLevel error</code></pre></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/wiki/linux/02-text-manipulation/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-33ce00ce9a9fa4784e76.js"],"app":["/app-5c682d347bad2410967c.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-19054cdaad6bd0731831.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-09e3ca5ed8f2e71e735f.js"],"component---src-pages-wiki-tsx":["/component---src-pages-wiki-tsx-28a233a790f66ad61ecf.js"],"component---src-templates-wiki-page-tsx":["/component---src-templates-wiki-page-tsx-b0ac064103169666a210.js"]};/*]]>*/</script><script src="/polyfill-33ce00ce9a9fa4784e76.js" nomodule=""></script><script src="/component---src-templates-wiki-page-tsx-b0ac064103169666a210.js" async=""></script><script src="/app-5c682d347bad2410967c.js" async=""></script><script src="/framework-3fc5895640b8716368a8.js" async=""></script><script src="/webpack-runtime-323dd04d61ee7e2b0d4a.js" async=""></script></body></html>
