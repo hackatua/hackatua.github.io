@@ -87,6 +87,7 @@ export const resetStyles = css`
     border: 0;
     font-size: 100%;
     font: inherit;
+    color: inherit;
     vertical-align: baseline;
   }
 
