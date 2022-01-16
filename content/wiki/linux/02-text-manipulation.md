@@ -175,3 +175,37 @@ ServerAdmin admin@localhost
 ErrorLog logs/error.log
 LogLevel error
 ```
+
+### more
+
+The `more` command displays a page of a file at a time, and allows you to go to the next page pressing _SPACE-BAR_ or _ARROW-DOWN_ keys,o to the previous page with _ARROW-UP_ key, or advence a line with the _INTRO_ key. To quit go to the end of the file or press _q_ key.
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ more httpd.conf
+
+###*********************************************************
+###*  Web-Developer Server Suite                           *
+###*  external link: http://sourceforge.net/projects/webdeveloper         *
+###*  devside_net@users.sourceforge.net                    *
+###*  v1.95-httpd22-ssl                                    *
+###*********************************************************
+
+
+ThreadsPerChild 250
+MaxRequestsPerChild  0
+
+Listen 80
+--More--(6%)
+```
+
+### less
+
+The `less` command is like `more` command, but with additional functionality. With `less` you can scroll in te file and also filter it for terms.
+
+``` bash
+┌──(kali㉿kali)-[~]
+└─$ less httpd.conf
+```
+
+To search in the file you have to presh the slash key (_/_). After that you can type and hit _INTRO_. `less` will hightlight the coincidences. You can press _n_(next) to go to the next coincidence. In order to quit, like with `more`, press the _q_ key.
