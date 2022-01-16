@@ -2,10 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import { WikiMarkdown } from "../components/WikiMarkdown"
 import { WikiTitle } from "../components/WikiTitle.styled"
+import { WikiBreadcrumb } from "../components/WikiBreadcrumb"
 
 interface Props {
   data: {
     markdownRemark: {
+      fields: {
+        slug: string
+      }
       frontmatter: {
         title?: string
       }
@@ -17,6 +21,7 @@ interface Props {
 const WikiPage: React.VFC<Props> = ({ data }) => {
   const {
     markdownRemark: {
+      fields: { slug },
       frontmatter: { title },
       html,
     },
@@ -24,6 +29,7 @@ const WikiPage: React.VFC<Props> = ({ data }) => {
 
   return (
     <>
+      <WikiBreadcrumb slug={slug} />
       {title && <WikiTitle>{title}</WikiTitle>}
       <WikiMarkdown content={html} />
     </>
@@ -33,6 +39,9 @@ const WikiPage: React.VFC<Props> = ({ data }) => {
 export const query = graphql`
   query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      fields {
+        slug
+      }
       frontmatter {
         title
       }
