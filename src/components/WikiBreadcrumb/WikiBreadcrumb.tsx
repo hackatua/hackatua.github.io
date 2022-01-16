@@ -24,7 +24,7 @@ export const WikiBreadcrumb: React.VFC<Props> = ({ slug }) => {
     <StyledWikiBreadcrumb>
       <StyledWikiBreadcrumbLink to="/">~</StyledWikiBreadcrumbLink>
       {breadcrumbs.map(({ title, path }, index) => (
-        <>
+        <React.Fragment key={index}>
           {index < breadcrumbs.length ? " / " : ""}
           {index < breadcrumbs.length - 1 ? (
             <StyledWikiBreadcrumbLink to={path}>
@@ -33,7 +33,7 @@ export const WikiBreadcrumb: React.VFC<Props> = ({ slug }) => {
           ) : (
             <StyledWikiBreadcrumbActive>{title}</StyledWikiBreadcrumbActive>
           )}
-        </>
+        </React.Fragment>
       ))}
     </StyledWikiBreadcrumb>
   )
