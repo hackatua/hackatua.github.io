@@ -1,32 +1,36 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
+import { ContentNode, WikiContent } from "../components/WikiContent"
+import { WikiTitle } from "../components/WikiTitle.styled"
+
+interface MarkdownRemarkNode {
+  fields: { slug: string }
+  id: string
+  frontmatter: {
+    title?: string
+  }
+}
 interface Props {
   data: {
     allMarkdownRemark: {
-      nodes: {
-        fields: { slug: string }
-        id: string
-        frontmatter: {
-          title?: string
-        }
-      }[]
+      nodes: MarkdownRemarkNode[]
     }
   }
 }
 
 const WikiPage: React.VFC<Props> = ({ data }) => {
+  const wikiContentNodes: ContentNode[] = mapMarkdownRemarkNodesToContentNodes(
+    data.allMarkdownRemark.nodes
+  )
+
   return (
     <>
-      <h2>Wiki Page!</h2>
-      <h3>Content</h3>
-      <ul>
-        {data.allMarkdownRemark.nodes.map(node => (
-          <li key={node.id}>
-            <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-          </li>
-        ))}
-      </ul>
+      <WikiTitle>Hackatua's Wiki</WikiTitle>
+
+      <p>Welcome to Hackatua Wiki Page!</p>
+
+      <WikiContent content={wikiContentNodes} />
     </>
   )
 }
@@ -48,3 +52,51 @@ export const query = graphql`
 `
 
 export default WikiPage
+
+function mapMarkdownRemarkNodesToContentNodes(
+  markdownRemarkNodes: MarkdownRemarkNode[]
+): ContentNode[] {
+  const contentNodes: ContentNode[] = []
+
+  markdownRemarkNodes.forEach(markdownRemarkNode => {
+    let actualContentNode: ContentNode
+
+    markdownRemarkNode.fields.slug
+      .split("/")
+      .filter(Boolean)
+      .slice(1)
+      .forEach((slugSlice, index, slugSlices) => {
+        const targetContentNodes =
+          index === 0 ? contentNodes : actualContentNode.nodes
+
+        const actualContentNodeFindResult = targetContentNodes.find(
+          ({ path }) => path === calculatePartialPath(slugSlices, index)
+        )
+
+        if (!actualContentNodeFindResult) {
+          const newContentNode: ContentNode = {
+            path: calculatePartialPath(slugSlices, index),
+            title: slugSlice,
+            nodes: [],
+          }
+
+          targetContentNodes.push(newContentNode)
+
+          actualContentNode = newContentNode
+        } else {
+          actualContentNode = actualContentNodeFindResult
+        }
+
+        if (index === slugSlices.length - 1) {
+          actualContentNode.title =
+            markdownRemarkNode.frontmatter.title || slugSlice
+        }
+      })
+  })
+
+  return contentNodes
+}
+
+function calculatePartialPath(slugSlices: string[], index): string {
+  return `/wiki/${slugSlices.slice(0, index + 1).join("/")}/`
+}

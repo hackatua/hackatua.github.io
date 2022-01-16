@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import bullet from "./bullet.png"
+import bullet from "../../images/bullet.png"
 
 export const StyledWikiMarkdown = styled.div`
   width: 100%;
@@ -17,7 +17,7 @@ export const StyledWikiMarkdown = styled.div`
     margin: 15px 0;
   }
 
-  a { 
+  a {
     color: ${p => p.theme.colors.inchworm};
     text-decoration: underline;
     transition: text-shadow 0.15s ease-out;
