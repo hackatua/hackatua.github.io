@@ -15,9 +15,8 @@ export const StyledWikiBreadcrumbLink = styled(
   text-decoration: underline;
 
   &:hover {
-    text-shadow: 0 0 4px ${p => p.theme.colors.inchworm},
-      0 0 6px ${p => p.theme.colors.inchworm},
-      0 0 8px ${p => p.theme.colors.inchworm};
+    text-shadow: 0 0 2px ${p => p.theme.colors.inchworm},
+      0 0 4px ${p => p.theme.colors.inchworm};
   }
 `
 
