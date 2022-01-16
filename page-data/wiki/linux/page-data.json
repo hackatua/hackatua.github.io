@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-wiki-page-tsx",
+    "path": "/wiki/linux/",
+    "result": {"data":{"markdownRemark":{"fields":{"slug":"/wiki/linux/"},"frontmatter":{"title":"Linux Fundamentals"},"html":""}},"pageContext":{"id":"6fd3be7a-4db2-5e38-8416-800682e0e101"}},
+    "staticQueryHashes": []}
