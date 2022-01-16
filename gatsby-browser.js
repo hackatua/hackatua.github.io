@@ -15,7 +15,6 @@ export const wrapPageElement = ({ element }) => (
       meta={[
         {
           name: "theme-color",
-          media: "(prefers-color-scheme: dark)",
           content: "black",
         },
       ]}
