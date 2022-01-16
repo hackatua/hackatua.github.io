@@ -13,6 +13,7 @@ export const StyledWikiBreadcrumbLink = styled(
   Link
 )<StyledWikiBreadcrumbLinkProps>`
   text-decoration: underline;
+  transition: text-shadow 0.15s ease-out;
 
   &:hover {
     text-shadow: 0 0 2px ${p => p.theme.colors.inchworm},

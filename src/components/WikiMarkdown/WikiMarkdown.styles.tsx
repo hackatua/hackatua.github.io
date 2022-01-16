@@ -20,6 +20,7 @@ export const StyledWikiMarkdown = styled.div`
   a { 
     color: ${p => p.theme.colors.inchworm};
     text-decoration: underline;
+    transition: text-shadow 0.15s ease-out;
   }
 
   a:hover {
