@@ -11,5 +11,5 @@ const Template = ({ children, ...args }) => (
 
 export const Default = Template.bind({})
 Default.args = {
-  children: "Header title",
+  children: "./Hackatua",
 }

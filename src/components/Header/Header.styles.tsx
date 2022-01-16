@@ -23,11 +23,6 @@ export const StyledHeaderTitle = styled(Link)`
   font-size: 30px;
   font-weight: bold;
   color: ${p => p.theme.colors.inchworm};
-  &:before {
-    content: "./";
-    position: absolute;
-    left: -40px;
-  }
 `
 
 export const StyledHeaderNavbar = styled.nav``

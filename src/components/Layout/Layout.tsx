@@ -4,7 +4,7 @@ import { StyledLayout } from "./Layout.styles"
 
 export const Layout: React.FC = ({ children }) => (
   <>
-    <Header>Hackatua</Header>
+    <Header>./Hackatua</Header>
     <StyledLayout>{children}</StyledLayout>
   </>
 )
