@@ -7,4 +7,4 @@ In this section you will find all relative to working with Linux. We will cover 
 ## Sections
 
 - [1. The Basics](01-the-basics)
-- [2. Text Manipulation](02-text%20manipulation)
+- [2. Text Manipulation](02-text-manipulation)
