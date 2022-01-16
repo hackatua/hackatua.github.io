@@ -355,5 +355,3 @@ Desktop  Documents  Downloads  Music  new_direcotory  Pictures  Public  Template
 └─$ ls
 Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
 ```
-
-## Exercises
