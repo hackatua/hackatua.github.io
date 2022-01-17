@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-wiki-page-tsx",
+    "path": "/wiki/linux/03-networking/",
+    "result": {"data":{"markdownRemark":{"fields":{"slug":"/wiki/linux/03-networking/"},"frontmatter":{"title":"3. Networking"},"html":"<h2>Analyzing Networks</h2>\n<h3>Listing Network Interfaces</h3>\n<h4>ip</h4>\n<h4>ifconfig</h4>\n<h3>Listing Wireless Network Interfaces</h3>\n<h4>iwconfig</h4>\n<h3>Checking if IP is up</h3>\n<h4>ping</h4>\n<h4>nc</h4>\n<h2>Changing your Network Information</h2>\n<h3>ifconfig</h3>\n<h4>Change ip address</h4>\n<h4>Change Network Mask and Broadcast Address</h4>\n<h4>Change your MAC Address</h4>\n<h3>dhclient</h3>\n<h2>DNS Manipulation</h2>\n<h3>Getting DNS Information</h3>\n<h4>whois</h4>\n<h4>dig</h4>\n<h3>Modifying DNS Resolution</h3>\n<h4>/etc/resolv.conf</h4>\n<h4>/etc/hosts</h4>"}},"pageContext":{"id":"755e5c5e-bf48-5aa7-83f8-6106c870f64a"}},
+    "staticQueryHashes": []}
