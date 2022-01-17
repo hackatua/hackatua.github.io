@@ -14,7 +14,7 @@ export const StyledWikiMarkdown = styled.div`
 
   p {
     text-indent: 30px;
-    margin: 15px 0;
+    margin: 10px 0 15px 0;
   }
 
   a {
@@ -47,31 +47,23 @@ export const StyledWikiMarkdown = styled.div`
   }
 
   h1 {
-    font-size: 30px;
+    font-size: 2em;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 1.75em;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 1.5em;
   }
 
   h4 {
-    font-size: 14px;
+    font-size: 1.25em;
   }
 
   h5 {
-    font-size: 12px;
-    text-transform: uppercase;
-    margin: 0 0 5px 0;
-  }
-
-  h6 {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #999;
+    font-size: 1em;
     margin: 0 0 5px 0;
   }
 
