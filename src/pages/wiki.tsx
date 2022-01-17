@@ -1,8 +1,9 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql , PageProps} from "gatsby"
 
 import { ContentNode, WikiContent } from "../components/WikiContent"
 import { WikiTitle } from "../components/WikiTitle.styled"
+import { WikiBreadcrumb } from "../components/WikiBreadcrumb"
 
 interface MarkdownRemarkNode {
   fields: { slug: string }
@@ -11,7 +12,7 @@ interface MarkdownRemarkNode {
     title?: string
   }
 }
-interface Props {
+interface Props extends PageProps{
   data: {
     allMarkdownRemark: {
       nodes: MarkdownRemarkNode[]
@@ -19,13 +20,15 @@ interface Props {
   }
 }
 
-const WikiPage: React.VFC<Props> = ({ data }) => {
+const WikiPage: React.VFC<Props> = ({ data, path}) => {
   const wikiContentNodes: ContentNode[] = mapMarkdownRemarkNodesToContentNodes(
     data.allMarkdownRemark.nodes
   )
 
   return (
     <>
+<WikiBreadcrumb slug={path} />
+
       <WikiTitle>Hackatua's Wiki</WikiTitle>
 
       <p>Welcome to Hackatua Wiki Page!</p>
