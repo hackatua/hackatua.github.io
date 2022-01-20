@@ -23,6 +23,7 @@ interface Props extends PageProps {
 
 const WikiPage: React.VFC<Props> = ({ data, path }) => {
   const wikiContentNodes: ContentNode[] = mapMarkdownRemarkNodesToContentNodes(
+    path,
     data.allMarkdownRemark.nodes
   )
 
@@ -59,6 +60,7 @@ export const query = graphql`
 export default WikiPage
 
 function mapMarkdownRemarkNodesToContentNodes(
+  basePath: string,
   markdownRemarkNodes: MarkdownRemarkNode[]
 ): ContentNode[] {
   const contentNodes: ContentNode[] = []
@@ -67,20 +69,20 @@ function mapMarkdownRemarkNodesToContentNodes(
     let actualContentNode: ContentNode
 
     markdownRemarkNode.fields.slug
+      .replace(basePath, "")
       .split("/")
       .filter(Boolean)
-      .slice(1)
       .forEach((slugSlice, index, slugSlices) => {
         const targetContentNodes =
           index === 0 ? contentNodes : actualContentNode.nodes
 
         const actualContentNodeFindResult = targetContentNodes.find(
-          ({ path }) => path === calculatePartialPath(slugSlices, index)
+          ({ path }) => path === calculatePath(basePath, slugSlices, index)
         )
 
         if (!actualContentNodeFindResult) {
           const newContentNode: ContentNode = {
-            path: calculatePartialPath(slugSlices, index),
+            path: calculatePath(basePath, slugSlices, index),
             title: slugSlice,
             index: Number.POSITIVE_INFINITY,
             nodes: [],
@@ -107,6 +109,6 @@ function mapMarkdownRemarkNodesToContentNodes(
   return contentNodes
 }
 
-function calculatePartialPath(slugSlices: string[], index): string {
-  return `/wiki/${slugSlices.slice(0, index + 1).join("/")}/`
+function calculatePath(basePath: string, slugSlices: string[], index): string {
+  return `${basePath}${slugSlices.slice(0, index + 1).join("/")}/`
 }
