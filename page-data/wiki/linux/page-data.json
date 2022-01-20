@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-templates-wiki-page-tsx",
     "path": "/wiki/linux/",
     "result": {"data":{"markdownRemark":{"fields":{"slug":"/wiki/linux/"},"frontmatter":{"title":"Linux Fundamentals"},"html":"<p>In this section you will find all relative to working with Linux. We will cover from some basics, to networking, Linux kernel, ... and some advanced topics.</p>\n<h2>Sections</h2>\n<ul>\n<li><a href=\"01-the-basics\">1. The Basics</a></li>\n<li><a href=\"02-text-manipulation\">2. Text Manipulation</a></li>\n<li><a href=\"03-networking\">3. Networking</a></li>\n</ul>"}},"pageContext":{"id":"6fd3be7a-4db2-5e38-8416-800682e0e101"}},
-    "staticQueryHashes": []}
+    "staticQueryHashes": ["1558889980"]}
