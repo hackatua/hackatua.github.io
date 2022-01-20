@@ -95,12 +95,10 @@ function mapMarkdownRemarkNodesToContentNodes(
           actualContentNode = actualContentNodeFindResult
         }
 
-        if (index === slugSlices.length - 1) {
+        if (markdownRemarkNode.fields.slug === actualContentNode.path) {
           Object.assign(actualContentNode, {
-            title: markdownRemarkNode.frontmatter.title || slugSlice,
-            index: Number.isInteger(markdownRemarkNode.frontmatter.index)
-              ? markdownRemarkNode.frontmatter.index
-              : Number.POSITIVE_INFINITY,
+            title: getNodeContentTitle(markdownRemarkNode, slugSlice),
+            index: getNodeContentIndex(markdownRemarkNode),
           })
         }
       })
@@ -111,4 +109,17 @@ function mapMarkdownRemarkNodesToContentNodes(
 
 function calculatePath(basePath: string, slugSlices: string[], index): string {
   return `${basePath}${slugSlices.slice(0, index + 1).join("/")}/`
+}
+
+function getNodeContentTitle(
+  markdownRemarkNode: MarkdownRemarkNode,
+  fallback: string
+): string {
+  return markdownRemarkNode.frontmatter.title || fallback
+}
+
+function getNodeContentIndex(markdownRemarkNode: MarkdownRemarkNode): number {
+  return Number.isInteger(markdownRemarkNode.frontmatter.index)
+    ? markdownRemarkNode.frontmatter.index
+    : Number.POSITIVE_INFINITY
 }
