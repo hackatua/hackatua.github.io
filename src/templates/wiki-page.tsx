@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { WikiMarkdown } from "../components/WikiMarkdown"
 import { WikiTitle } from "../components/WikiTitle.styled"
-import { WikiBreadcrumb } from "../components/WikiBreadcrumb"
+import { GatsbyWikiBreadcrumb } from "../components/WikiBreadcrumb"
 
 interface Props {
   data: {
@@ -29,7 +29,7 @@ const WikiPage: React.VFC<Props> = ({ data }) => {
 
   return (
     <>
-      <WikiBreadcrumb slug={slug} />
+      <GatsbyWikiBreadcrumb slug={slug} />
       {title && <WikiTitle>{title}</WikiTitle>}
       <WikiMarkdown content={html} />
     </>

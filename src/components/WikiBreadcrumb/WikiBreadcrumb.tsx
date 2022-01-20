@@ -5,17 +5,23 @@ import {
   StyledWikiBreadcrumbLink,
 } from "./WikiBreadcrumb.styled"
 
+export type SlugToTitleDictionary = { [key: string]: string }
+
 interface Props {
   slug: string
+  slugToTitleDictionary?: SlugToTitleDictionary
 }
 
-export const WikiBreadcrumb: React.VFC<Props> = ({ slug }) => {
+export const WikiBreadcrumb: React.VFC<Props> = ({
+  slug,
+  slugToTitleDictionary,
+}) => {
   const breadcrumbs = slug
     .split("/")
     .filter(Boolean)
     .map((subPath, index, subPaths) => {
-      const title = subPath
       let path = `/${subPaths.slice(0, index + 1).join("/")}/`
+      const title = getTitle(path, subPath, slugToTitleDictionary)
 
       return { title, path }
     })
@@ -37,4 +43,12 @@ export const WikiBreadcrumb: React.VFC<Props> = ({ slug }) => {
       ))}
     </StyledWikiBreadcrumb>
   )
+}
+
+function getTitle(
+  path: string,
+  subPath: string,
+  slugToTitleDictionary?: SlugToTitleDictionary
+): string {
+  return (slugToTitleDictionary && slugToTitleDictionary[path]) || subPath
 }

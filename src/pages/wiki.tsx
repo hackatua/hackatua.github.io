@@ -3,7 +3,7 @@ import { graphql, PageProps } from "gatsby"
 
 import { ContentNode, WikiContent } from "../components/WikiContent"
 import { WikiTitle } from "../components/WikiTitle.styled"
-import { WikiBreadcrumb } from "../components/WikiBreadcrumb"
+import { GatsbyWikiBreadcrumb } from "../components/WikiBreadcrumb"
 
 interface MarkdownRemarkNode {
   fields: { slug: string }
@@ -29,7 +29,7 @@ const WikiPage: React.VFC<Props> = ({ data, path }) => {
 
   return (
     <>
-      <WikiBreadcrumb slug={path} />
+      <GatsbyWikiBreadcrumb slug={path} />
 
       <WikiTitle>Hackatua's Wiki</WikiTitle>
 
