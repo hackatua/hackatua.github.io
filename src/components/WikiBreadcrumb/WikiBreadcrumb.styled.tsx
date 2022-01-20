@@ -12,7 +12,11 @@ interface StyledWikiBreadcrumbLinkProps {
 export const StyledWikiBreadcrumbLink = styled(
   Link
 )<StyledWikiBreadcrumbLinkProps>`
+  display: inline-block;
   text-decoration: underline;
+  &:first-letter {
+    text-transform: uppercase;
+  }
   transition: text-shadow 0.15s ease-out;
 
   &:hover {
@@ -22,5 +26,9 @@ export const StyledWikiBreadcrumbLink = styled(
 `
 
 export const StyledWikiBreadcrumbActive = styled.span`
+  display: inline-block;
   text-shadow: 0 0 4px ${p => p.theme.colors.inchworm};
+  &:first-letter {
+    text-transform: uppercase;
+  }
 `
