@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql , PageProps} from "gatsby"
+import { graphql, PageProps } from "gatsby"
 
 import { ContentNode, WikiContent } from "../components/WikiContent"
 import { WikiTitle } from "../components/WikiTitle.styled"
@@ -10,9 +10,10 @@ interface MarkdownRemarkNode {
   id: string
   frontmatter: {
     title?: string
+    index?: number
   }
 }
-interface Props extends PageProps{
+interface Props extends PageProps {
   data: {
     allMarkdownRemark: {
       nodes: MarkdownRemarkNode[]
@@ -20,14 +21,14 @@ interface Props extends PageProps{
   }
 }
 
-const WikiPage: React.VFC<Props> = ({ data, path}) => {
+const WikiPage: React.VFC<Props> = ({ data, path }) => {
   const wikiContentNodes: ContentNode[] = mapMarkdownRemarkNodesToContentNodes(
     data.allMarkdownRemark.nodes
   )
 
   return (
     <>
-<WikiBreadcrumb slug={path} />
+      <WikiBreadcrumb slug={path} />
 
       <WikiTitle>Hackatua's Wiki</WikiTitle>
 
@@ -48,6 +49,7 @@ export const query = graphql`
         id
         frontmatter {
           title
+          index
         }
       }
     }
@@ -80,6 +82,7 @@ function mapMarkdownRemarkNodesToContentNodes(
           const newContentNode: ContentNode = {
             path: calculatePartialPath(slugSlices, index),
             title: slugSlice,
+            index: Number.POSITIVE_INFINITY,
             nodes: [],
           }
 
@@ -91,8 +94,12 @@ function mapMarkdownRemarkNodesToContentNodes(
         }
 
         if (index === slugSlices.length - 1) {
-          actualContentNode.title =
-            markdownRemarkNode.frontmatter.title || slugSlice
+          Object.assign(actualContentNode, {
+            title: markdownRemarkNode.frontmatter.title || slugSlice,
+            index: Number.isInteger(markdownRemarkNode.frontmatter.index)
+              ? markdownRemarkNode.frontmatter.index
+              : Number.POSITIVE_INFINITY,
+          })
         }
       })
   })

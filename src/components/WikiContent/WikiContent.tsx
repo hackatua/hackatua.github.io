@@ -21,7 +21,7 @@ const WikiContentItem: React.FC<WikiContentItemProps> = ({
 
     {nodes.length > 0 && (
       <StyledWikiContentBlock>
-        {nodes.map(contentNode => (
+        {nodes.sort(sortByIndex).map(contentNode => (
           <WikiContentItem contentNode={contentNode} key={contentNode.path} />
         ))}
       </StyledWikiContentBlock>
@@ -43,10 +43,17 @@ export const WikiContent: React.VFC<WikiContentProps> = ({ content }) => {
       <StyledWikiContentTitle>Content</StyledWikiContentTitle>
 
       <StyledWikiContentBlock>
-        {content.map(contentNode => (
+        {content.sort(sortByIndex).map(contentNode => (
           <WikiContentItem contentNode={contentNode} key={contentNode.path} />
         ))}
       </StyledWikiContentBlock>
     </StyledWikiContent>
   )
+}
+
+function sortByIndex(
+  contentNode1: ContentNode,
+  contentNode2: ContentNode
+): number {
+  return contentNode1.index < contentNode2.index ? -1 : 1
 }

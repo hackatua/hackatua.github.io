@@ -1,5 +1,6 @@
 ---
 title: 1. The Basics
+index: 1
 ---
 
 ## Terms and concepts

@@ -1,5 +1,6 @@
 ---
 title: 3. Networking
+index: 3
 ---
 
 ## Analyzing Networks

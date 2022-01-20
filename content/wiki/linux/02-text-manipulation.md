@@ -1,5 +1,6 @@
 ---
 title: 2. Text Manipulation
+index: 2
 ---
 
 In Linux, nerly everything you deal with directly is a file. Most of the application configuration files in Linux are text files. In order to change the configuration of an application you only have to modify the configuration file and restart it.
