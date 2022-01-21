@@ -4,7 +4,7 @@ const {
   reporter,
 } = require('gatsby/node_modules/gatsby-cli/lib/reporter/reporter')
 
-exports.createPages = async ({ graphql, actions, repoter }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   const wikiPageTemplate = path.resolve('./src/templates/wiki-page.tsx')
