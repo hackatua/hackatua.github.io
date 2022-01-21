@@ -1,10 +1,10 @@
-import { ComponentStory } from "@storybook/react"
+import { ComponentStory } from '@storybook/react'
 
-import { WikiBreadcrumb } from "./WikiBreadcrumb"
+import { WikiBreadcrumb } from './WikiBreadcrumb'
 
 export default {
   component: WikiBreadcrumb,
-  title: "Components/WikiBreadcrumb",
+  title: 'Components/WikiBreadcrumb',
 }
 
 const Template: ComponentStory<typeof WikiBreadcrumb> = ({ ...args }) => (
@@ -13,5 +13,5 @@ const Template: ComponentStory<typeof WikiBreadcrumb> = ({ ...args }) => (
 
 export const Default = Template.bind({})
 Default.args = {
-  slug: "/wiki/linux/02-text-manipulation/",
+  slug: '/wiki/linux/02-text-manipulation/',
 }

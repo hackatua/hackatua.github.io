@@ -83,18 +83,18 @@ The _Change Directory_ command allows to select a new working directory.
 
 ```bash
 ┌──(kali㉿kali)-[~]
-└─$ cd /etc/ssh 
-                                                        
+└─$ cd /etc/ssh
+
 ┌──(kali㉿kali)-[/etc/ssh]
-└─$ pwd   
+└─$ pwd
 /etc/ssh
 ```
 
 Depending on the arguments the command allows diffetent navigations.
 
-* `cd` or `cd ~`: navigate to home direcory
-* `cd ..`: navigates one level up. You can navigete more levels up adding mor dot pairs.
-* `cd -`: navigates to the previus directory you've visited.
+- `cd` or `cd ~`: navigate to home direcory
+- `cd ..`: navigates one level up. You can navigete more levels up adding mor dot pairs.
+- `cd -`: navigates to the previus directory you've visited.
 
 ### ls
 
@@ -110,7 +110,7 @@ You can use the `-l` argument to use a long listing format:
 
 ```bash
 ┌──(kali㉿kali)-[~]
-└─$ ls -l 
+└─$ ls -l
 total 32
 drwxr-xr-x 2 kali kali 4096 Jan  5 11:45 Desktop
 drwxr-xr-x 2 kali kali 4096 Jan  5 11:45 Documents
@@ -126,7 +126,7 @@ For showing the hidden files (those which starts with a dot) you can use the `-a
 
 ```bash
 ┌──(kali㉿kali)-[~]
-└─$ ls -a    
+└─$ ls -a
 .                 .cache     Downloads   .ICEauthority  Pictures   .tmux             .xsession-errors
 ..                .config    .face       .java          .pki       .tmux.conf        .xsession-errors.old
 .bash_logout      Desktop    .face.icon  .local         .profile   .tmux.conf.local  .zsh_history
@@ -138,12 +138,13 @@ For listing the content for a different direcctory you can use the directory as 
 
 ```bash
 ┌──(kali㉿kali)-[~]
-└─$ ls .tmux       
+└─$ ls .tmux
 LICENSE.MIT  LICENSE.WTFPLv2  README.md
 ```
 
 ### man
-The *Manual* command shows the manual page of the command.
+
+The _Manual_ command shows the manual page of the command.
 
 ```bash
 ┌──(kali㉿kali)-[~]
@@ -156,7 +157,7 @@ Shows a summarized explanation of the command. Not all commands have this argume
 
 ```bash
 ┌──(kali㉿kali)-[~]
-└─$ ls --help 
+└─$ ls --help
 Usage: ls [OPTION]... [FILE]...
 List information about the FILEs (the current directory by default).
 Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
@@ -251,15 +252,15 @@ You can add more content to the file with the append symbol `>>`.
 Some content to the file.
 
 ┌──(kali㉿kali)-[~]
-└─$ cat sample_file.txt  
+└─$ cat sample_file.txt
 Some content to the file.
 
 ┌──(kali㉿kali)-[~]
-└─$ cat >> sample_file.txt 
+└─$ cat >> sample_file.txt
 more content to the file
 
 ┌──(kali㉿kali)-[~]
-└─$ cat sample_file.txt   
+└─$ cat sample_file.txt
 Some content to the file.more content to the file
 ```
 
@@ -288,13 +289,13 @@ The command _make directory_ is used to create a new directory.
 └─$ cd new_direcotory
 
 ┌──(kali㉿kali)-[~/new_direcotory]
-└─$ pwd                     
+└─$ pwd
 /home/kali/new_direcotory
 ```
 
 ### cp
 
-The _copy_ commands allows to copy a file or a directory. 
+The _copy_ commands allows to copy a file or a directory.
 
 ```bash
 ┌──(kali㉿kali)-[~/new_direcotory]

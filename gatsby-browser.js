@@ -1,12 +1,12 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { ThemeProvider } from "styled-components"
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { ThemeProvider } from 'styled-components'
 
-import { Layout } from "./src/components/Layout"
-import { GlobalStyles } from "./src/components/GlobalStyles"
-import { theme } from "./src/theme"
+import { Layout } from './src/components/Layout'
+import { GlobalStyles } from './src/components/GlobalStyles'
+import { theme } from './src/theme'
 
-import "prismjs/themes/prism-tomorrow.css"
+import 'prismjs/themes/prism-tomorrow.css'
 
 export const wrapPageElement = ({ element }) => (
   <>
@@ -14,8 +14,8 @@ export const wrapPageElement = ({ element }) => (
       title="Hackatua"
       meta={[
         {
-          name: "theme-color",
-          content: "black",
+          name: 'theme-color',
+          content: 'black',
         },
       ]}
     />

@@ -1,11 +1,11 @@
-import React from "react"
+import React from 'react'
 import {
   StyledHeader,
   StyledHeaderContent,
   StyledHeaderNavbar,
   StyledHeaderNavLink,
   StyledHeaderTitle,
-} from "./Header.styles"
+} from './Header.styles'
 
 export const Header: React.FC = ({ children }) => (
   <StyledHeader>

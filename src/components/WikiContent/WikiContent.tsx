@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import { ContentNode } from "./WikiContent.models"
+import React from 'react'
+import { Link } from 'gatsby'
+import { ContentNode } from './WikiContent.models'
 
 import {
   StyledWikiContent,
@@ -8,7 +8,7 @@ import {
   StyledWikiContentItem,
   StyledWikiContentLink,
   StyledWikiContentTitle,
-} from "./WikiContent.styles"
+} from './WikiContent.styles'
 
 interface WikiContentItemProps {
   contentNode: ContentNode

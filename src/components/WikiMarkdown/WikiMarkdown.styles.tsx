@@ -1,12 +1,12 @@
-import styled from "styled-components"
-import bullet from "../../images/bullet.png"
+import styled from 'styled-components'
+import bullet from '../../images/bullet.png'
 
 export const StyledWikiMarkdown = styled.div`
   width: 100%;
   -webkit-font-smoothing: antialiased;
 
-  code[class*="language-"],
-  pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     font-family: Hack;
     line-height: 1.3;
     font-size: 14px;

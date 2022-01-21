@@ -1,13 +1,13 @@
-const path = require("path")
-const { createFilePath } = require("gatsby-source-filesystem")
+const path = require('path')
+const { createFilePath } = require('gatsby-source-filesystem')
 const {
   reporter,
-} = require("gatsby/node_modules/gatsby-cli/lib/reporter/reporter")
+} = require('gatsby/node_modules/gatsby-cli/lib/reporter/reporter')
 
 exports.createPages = async ({ graphql, actions, repoter }) => {
   const { createPage } = actions
 
-  const wikiPageTemplate = path.resolve("./src/templates/wiki-page.tsx")
+  const wikiPageTemplate = path.resolve('./src/templates/wiki-page.tsx')
 
   const wikiContentQueryResult = await graphql(`
     {
@@ -24,7 +24,7 @@ exports.createPages = async ({ graphql, actions, repoter }) => {
 
   if (wikiContentQueryResult.errors) {
     reporter.panicOnBuild(
-      "There was an error loading wiki pages",
+      'There was an error loading wiki pages',
       wikiContentQueryResult.errors
     )
     return
@@ -48,19 +48,19 @@ exports.createPages = async ({ graphql, actions, repoter }) => {
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === "MarkdownRemark") {
+  if (node.internal.type === 'MarkdownRemark') {
     const contentType = getNode(node.parent).sourceInstanceName
     const slug = createFilePath({ node, getNode })
 
     createNodeField({
       node,
-      name: "contentType",
+      name: 'contentType',
       value: contentType,
     })
 
     createNodeField({
       node,
-      name: "slug",
+      name: 'slug',
       value: `/${contentType}${slug}`,
     })
   }

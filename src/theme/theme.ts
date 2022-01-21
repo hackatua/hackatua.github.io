@@ -1,4 +1,4 @@
-import { Colors, colors } from "./colors"
+import { Colors, colors } from './colors'
 
 export const theme: Theme = {
   colors,

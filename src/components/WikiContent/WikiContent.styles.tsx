@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
-import styled from "styled-components"
+import { Link } from 'gatsby'
+import styled from 'styled-components'
 
-import bullet from "../../images/bullet.png"
+import bullet from '../../images/bullet.png'
 
 export const StyledWikiContent = styled.div`
   padding: 20px;

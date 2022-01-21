@@ -1,4 +1,4 @@
-import { css } from "styled-components"
+import { css } from 'styled-components'
 
 export const resetStyles = css`
   html,
@@ -124,7 +124,7 @@ export const resetStyles = css`
   blockquote:after,
   q:before,
   q:after {
-    content: "";
+    content: '';
     content: none;
   }
 
@@ -134,6 +134,6 @@ export const resetStyles = css`
   }
 
   a {
-      text-decoration: none;
+    text-decoration: none;
   }
 `

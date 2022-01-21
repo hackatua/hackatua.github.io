@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { Link } from "gatsby"
+import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 export const StyledHeader = styled.header`
   background: rgba(0, 0, 0, 0.1);
@@ -26,7 +26,6 @@ export const StyledHeaderTitle = styled(Link)`
 `
 
 export const StyledHeaderNavbar = styled.nav``
-
 
 export const StyledHeaderNavLink = styled(Link)`
   color: ${p => p.theme.colors.inchworm};

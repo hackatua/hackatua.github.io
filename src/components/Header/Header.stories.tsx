@@ -1,8 +1,8 @@
-import { Header } from "./Header"
+import { Header } from './Header'
 
 export default {
   component: Header,
-  title: "Components/Header",
+  title: 'Components/Header',
 }
 
 const Template = ({ children, ...args }) => (
@@ -11,5 +11,5 @@ const Template = ({ children, ...args }) => (
 
 export const Default = Template.bind({})
 Default.args = {
-  children: "./Hackatua",
+  children: './Hackatua',
 }

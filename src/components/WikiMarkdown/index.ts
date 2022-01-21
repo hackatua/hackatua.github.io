@@ -1,1 +1,1 @@
-export { WikiMarkdown } from "./WikiMarkdown"
+export { WikiMarkdown } from './WikiMarkdown'

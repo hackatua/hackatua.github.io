@@ -1,6 +1,6 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { WikiBreadcrumb, SlugToTitleDictionary } from "./WikiBreadcrumb"
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import { WikiBreadcrumb, SlugToTitleDictionary } from './WikiBreadcrumb'
 
 interface MarkdownRemarkNode {
   fields: { slug: string }

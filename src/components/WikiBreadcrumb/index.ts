@@ -1,2 +1,2 @@
-export { WikiBreadcrumb } from "./WikiBreadcrumb"
-export { GatsbyWikiBreadcrumb } from "./WikiBreadcrumb.gatsby"
+export { WikiBreadcrumb } from './WikiBreadcrumb'
+export { GatsbyWikiBreadcrumb } from './WikiBreadcrumb.gatsby'

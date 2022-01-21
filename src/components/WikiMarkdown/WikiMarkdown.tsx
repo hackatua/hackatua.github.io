@@ -1,5 +1,5 @@
-import React from "react"
-import { StyledWikiMarkdown } from "./WikiMarkdown.styles"
+import React from 'react'
+import { StyledWikiMarkdown } from './WikiMarkdown.styles'
 interface Props {
   content: string
 }

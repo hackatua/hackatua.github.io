@@ -1,9 +1,9 @@
-import React from "react"
-import { graphql, PageProps } from "gatsby"
+import React from 'react'
+import { graphql, PageProps } from 'gatsby'
 
-import { ContentNode, WikiContent } from "../components/WikiContent"
-import { WikiTitle } from "../components/WikiTitle.styled"
-import { GatsbyWikiBreadcrumb } from "../components/WikiBreadcrumb"
+import { ContentNode, WikiContent } from '../components/WikiContent'
+import { WikiTitle } from '../components/WikiTitle.styled'
+import { GatsbyWikiBreadcrumb } from '../components/WikiBreadcrumb'
 
 interface MarkdownRemarkNode {
   fields: { slug: string }
@@ -69,8 +69,8 @@ function mapMarkdownRemarkNodesToContentNodes(
     let actualContentNode: ContentNode
 
     markdownRemarkNode.fields.slug
-      .replace(basePath, "")
-      .split("/")
+      .replace(basePath, '')
+      .split('/')
       .filter(Boolean)
       .forEach((slugSlice, index, slugSlices) => {
         const targetContentNodes =
@@ -108,7 +108,7 @@ function mapMarkdownRemarkNodesToContentNodes(
 }
 
 function calculatePath(basePath: string, slugSlices: string[], index): string {
-  return `${basePath}${slugSlices.slice(0, index + 1).join("/")}/`
+  return `${basePath}${slugSlices.slice(0, index + 1).join('/')}/`
 }
 
 function getNodeContentTitle(

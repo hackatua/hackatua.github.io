@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { WikiMarkdown } from "../components/WikiMarkdown"
-import { WikiTitle } from "../components/WikiTitle.styled"
-import { GatsbyWikiBreadcrumb } from "../components/WikiBreadcrumb"
+import React from 'react'
+import { graphql } from 'gatsby'
+import { WikiMarkdown } from '../components/WikiMarkdown'
+import { WikiTitle } from '../components/WikiTitle.styled'
+import { GatsbyWikiBreadcrumb } from '../components/WikiBreadcrumb'
 
 interface Props {
   data: {

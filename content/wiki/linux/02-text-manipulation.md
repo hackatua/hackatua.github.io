@@ -204,7 +204,7 @@ Listen 80
 
 The `less` command is like `more` command, but with additional functionality. With `less` you can scroll in te file and also filter it for terms.
 
-``` bash
+```bash
 ┌──(kali㉿kali)-[~]
 └─$ less httpd.conf
 ```
