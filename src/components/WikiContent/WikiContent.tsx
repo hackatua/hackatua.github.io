@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from '../atoms/Link'
 import { ContentNode } from './WikiContent.models'
 
 import {
   StyledWikiContent,
   StyledWikiContentBlock,
   StyledWikiContentItem,
-  StyledWikiContentLink,
   StyledWikiContentTitle,
 } from './WikiContent.styles'
 
@@ -17,7 +16,7 @@ const WikiContentItem: React.FC<WikiContentItemProps> = ({
   contentNode: { path, title, nodes },
 }) => (
   <StyledWikiContentItem>
-    <StyledWikiContentLink to={path}>{title}</StyledWikiContentLink>
+    <Link to={path}>{title}</Link>
 
     {nodes.length > 0 && (
       <StyledWikiContentBlock>

@@ -1,25 +1,21 @@
 import React from 'react'
+
+import { Link } from '../atoms/Link'
 import {
   StyledHeader,
   StyledHeaderContent,
-  StyledHeaderNavbar,
-  StyledHeaderNavLink,
   StyledHeaderTitle,
 } from './Header.styles'
 
 export const Header: React.FC = ({ children }) => (
   <StyledHeader>
     <StyledHeaderContent>
-      <StyledHeaderTitle to="/">{children}</StyledHeaderTitle>
-      <StyledHeaderNavbar>
-        <StyledHeaderNavLink
-          to="/wiki"
-          activeClassName="isActive"
-          partiallyActive={true}
-        >
+      <StyledHeaderTitle to="/" hideUnderline>{children}</StyledHeaderTitle>
+      <nav>
+        <Link to="/wiki/" showActive partiallyActive hideUnderline>
           Wiki
-        </StyledHeaderNavLink>
-      </StyledHeaderNavbar>
+        </Link>
+      </nav>
     </StyledHeaderContent>
   </StyledHeader>
 )

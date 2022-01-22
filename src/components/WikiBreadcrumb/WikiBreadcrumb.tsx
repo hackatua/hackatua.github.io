@@ -1,7 +1,7 @@
 import React from 'react'
+
 import {
   StyledWikiBreadcrumb,
-  StyledWikiBreadcrumbActive,
   StyledWikiBreadcrumbLink,
 } from './WikiBreadcrumb.styled'
 
@@ -31,14 +31,14 @@ export const WikiBreadcrumb: React.VFC<Props> = ({
       <StyledWikiBreadcrumbLink to="/">~</StyledWikiBreadcrumbLink>
       {breadcrumbs.map(({ title, path }, index) => (
         <React.Fragment key={index}>
-          {index < breadcrumbs.length ? ' / ' : ''}
-          {index < breadcrumbs.length - 1 ? (
-            <StyledWikiBreadcrumbLink to={path}>
-              {title}
-            </StyledWikiBreadcrumbLink>
-          ) : (
-            <StyledWikiBreadcrumbActive>{title}</StyledWikiBreadcrumbActive>
-          )}
+          {index < breadcrumbs.length && ' / '}
+          <StyledWikiBreadcrumbLink
+            to={path}
+            hideUnderline={index === breadcrumbs.length - 1}
+            showActive
+          >
+            {title}
+          </StyledWikiBreadcrumbLink>
         </React.Fragment>
       ))}
     </StyledWikiBreadcrumb>
