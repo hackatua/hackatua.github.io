@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import { rgba } from 'polished'
 
 import { Link } from '../atoms/Link'
 
 export const StyledHeader = styled.header`
-  background: rgba(0, 0, 0, 0.1);
+  background: ${p => rgba(p.theme.colors.black, 0.1)};
   width: 100%;
   border-bottom: 1px dashed ${p => p.theme.colors.inchworm};
   padding: 20px 0;

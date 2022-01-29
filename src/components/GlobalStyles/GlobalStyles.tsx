@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { rgba } from 'polished'
 import background from '../../images/background.png'
 import hackRegularWebFontWoff from '../../fonts/hack-regular-webfont.woff'
 import hackRegularWebFontWoff2 from '../../fonts/hack-regular-webfont.woff2'
@@ -26,7 +27,7 @@ export const GlobalStyles = createGlobalStyle`
     }
     
     body::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+        box-shadow: inset 0 0 5px ${p => rgba(p.theme.colors.black, 0.5)};
     }
        
     body::-webkit-scrollbar-thumb {

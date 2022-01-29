@@ -1,12 +1,13 @@
 import styled from 'styled-components'
+import { rgba } from 'polished'
 
 import bullet from '../../images/bullet.png'
 
 export const StyledWikiContent = styled.div`
   padding: 20px;
   margin-top: 10px;
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px dashed ${p => p.theme.colors.inchworm}70;
+  background: ${p => rgba(p.theme.colors.black, 0.3)};
+  border: 1px dashed ${p => rgba(p.theme.colors.inchworm, 0.7)};
   border-radius: 15px;
 `
 

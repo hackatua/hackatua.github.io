@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { rgba } from 'polished'
 import bullet from '../../images/bullet.png'
 
 export const StyledWikiMarkdown = styled.div`
@@ -131,7 +132,7 @@ export const StyledWikiMarkdown = styled.div`
   aside {
     margin: 10px 0;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.3);
+    background: ${p => rgba(p.theme.colors.black, 0.3)};
     border-radius: 10px;
   }
 `
