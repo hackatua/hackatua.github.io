@@ -42,7 +42,7 @@ export const StyledWikiMarkdown = styled.div`
   h4,
   h5,
   h6 {
-    color: #b5e853;
+    color: ${p => p.theme.colors.inchworm};
     margin: 20px 0 10px;
   }
 
@@ -101,9 +101,9 @@ export const StyledWikiMarkdown = styled.div`
   }
 
   blockquote {
-    color: #aaa;
+    color: ${p => p.theme.colors.plaster};
     padding-left: 10px;
-    border-left: 1px dotted #666;
+    border-left: 1px dotted ${p => p.theme.colors.squant};
   }
 
   table {
@@ -113,7 +113,7 @@ export const StyledWikiMarkdown = styled.div`
 
   th {
     text-align: left;
-    border-bottom: 1px dashed #b5e853;
+    border-bottom: 1px dashed ${p => p.theme.colors.inchworm};
     padding: 5px 10px;
   }
 
@@ -124,8 +124,8 @@ export const StyledWikiMarkdown = styled.div`
   hr {
     height: 0;
     border: 0;
-    border-bottom: 1px dashed #b5e853;
-    color: #b5e853;
+    border-bottom: 1px dashed ${p => p.theme.colors.inchworm};
+    color: ${p => p.theme.colors.inchworm};
   }
 
   aside {

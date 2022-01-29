@@ -5,7 +5,7 @@ import { Link } from '../atoms/Link'
 export const StyledHeader = styled.header`
   background: rgba(0, 0, 0, 0.1);
   width: 100%;
-  border-bottom: 1px dashed #b5e853;
+  border-bottom: 1px dashed ${p => p.theme.colors.inchworm};
   padding: 20px 0;
   margin: 0 0 40px 0;
 `

@@ -1,6 +1,7 @@
 export const colors = {
   inchworm: '#b5e853',
   mattBlack: '#151515',
+  squant: '#666666',
   plaster: '#eaeaea',
 }
 
