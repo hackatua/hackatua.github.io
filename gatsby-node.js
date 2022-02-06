@@ -1,8 +1,6 @@
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
-const {
-  reporter,
-} = require('gatsby/node_modules/gatsby-cli/lib/reporter/reporter')
+const { reporter } = require('gatsby-cli/lib/reporter/reporter')
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
