@@ -67,3 +67,14 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## Commits types
+
+- feat: (new feature for the user, not a new feature for build script)
+- fix: (bug fix for the user, not a fix to a build script)
+- docs: (changes to the documentation)
+- style: (formatting, missing semi colons, etc; no production code change)
+- refactor: (refactoring production code, eg. renaming a variable)
+- test: (adding missing tests, refactoring tests; no production code change)
+- chore: (updating grunt tasks etc; no production code change)
+- content: (adds content to the site)
